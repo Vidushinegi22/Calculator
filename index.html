@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link href="./style/style.css" rel="stylesheet">
+    <link href="./images/calculator.png" rel="icon">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v6.0.0-beta3/css/all.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oxanium&display=swap" rel="stylesheet">
+    <script src="./script/script.js" defer></script>
+</head>
+
+<body>
+    <a href="https://github.com/isabdch" target="_blank"><img src="./images/github.png" height="23px"></a>
+    <div class="container">
+        <div id="screen">
+            <h1 data-placeholder="0"></h1>
+            <div id="inScreen"></div>
+        </div>
+        <button onclick="clearScreen()" id="clear">C</button>
+        <button onclick="deleteScreen()" id="delete"><i class="fa-solid fa-delete-left"></i></button>
+        <button onclick="updateScreen(this)" id="plus">+</button>
+        <button onclick="updateScreen(this)" id="minus">-</button>
+        <button onclick="updateScreen(this)" id="n7">7</button>
+        <button onclick="updateScreen(this)" id="n8">8</button>
+        <button onclick="updateScreen(this)" id="n9">9</button>
+        <button onclick="updateScreen(this)" id="mult">*</button>
+        <button onclick="updateScreen(this)" id="n4">4</button>
+        <button onclick="updateScreen(this)" id="n5">5</button>
+        <button onclick="updateScreen(this)" id="n6">6</button>
+        <button onclick="updateScreen(this)" id="divide">/</button>
+        <button onclick="updateScreen(this)" id="n1">1</button>
+        <button onclick="updateScreen(this)" id="n2">2</button>
+        <button onclick="updateScreen(this)" id="n3">3</button>
+        <button onclick="showResult()" id="equal"><i class="fa-regular fa-equals"></i></button>
+        <button onclick="updateScreen(this)" id="point">.</button>
+        <button onclick="updateScreen(this)" id="n0">0</button>
+    </div>
+</body>
+
+</html>
